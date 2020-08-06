@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <!--dimension-size-->
+    <dimen name="dim_1dp">1dp</dimen>
+    <dimen name="dim_2dp">2dp</dimen>
+    <dimen name="dim_3dp">3dp</dimen>
+    <dimen name="dim_4dp">4dp</dimen>
+    <dimen name="dim_5dp">5dp</dimen>
+    <dimen name="dim_6dp">6dp</dimen>
+    <dimen name="dim_7dp">7dp</dimen>
+    <dimen name="dim_8dp">8dp</dimen>
+    <dimen name="dim_9dp">9dp</dimen>
+    <dimen name="dim_10dp">10dp</dimen>
+    <dimen name="dim_11dp">11dp</dimen>
+    <dimen name="dim_12dp">12dp</dimen>
+    <dimen name="dim_13dp">13dp</dimen>
+    <dimen name="dim_14dp">14dp</dimen>
+    <dimen name="dim_15dp">15dp</dimen>
+    <dimen name="dim_16dp">16dp</dimen>
+    <dimen name="dim_20dp">20dp</dimen>
+    <dimen name="dim_24dp">24dp</dimen>
+    <dimen name="dim_25dp">25dp</dimen>
+    <dimen name="dim_27dp">27dp</dimen>
+    <dimen name="dim_30dp">30dp</dimen>
+    <dimen name="dim_32dp">32dp</dimen>
+    <dimen name="dim_35dp">35dp</dimen>
+    <dimen name="dim_40dp">40dp</dimen>
+    <dimen name="dim_47dp">47dp</dimen>
+    <dimen name="dim_48dp">48dp</dimen>
+    <dimen name="dim_50dp">50dp</dimen>
+    <dimen name="dim_55dp">55dp</dimen>
+    <dimen name="dim_56dp">56dp</dimen>
+    <dimen name="dim_60dp">60dp</dimen>
+    <dimen name="dim_63dp">63dp</dimen>
+    <dimen name="dim_64dp">64dp</dimen>
+    <dimen name="dim_65dp">65dp</dimen>
+    <dimen name="dim_70dp">70dp</dimen>
+    <dimen name="dim_72dp">72dp</dimen>
+    <dimen name="dim_75dp">75dp</dimen>
+    <dimen name="dim_80dp">80dp</dimen>
+    <dimen name="dim_100dp">100dp</dimen>
+    <dimen name="dim_110dp">110dp</dimen>
+    <dimen name="dim_120dp">120dp</dimen>
+    <dimen name="dim_130dp">130dp</dimen>
+    <dimen name="dim_140dp">140dp</dimen>
+    <dimen name="dim_150dp">150dp</dimen>
+    <dimen name="dim_200dp">200dp</dimen>
+    <dimen name="dim_240dp">240dp</dimen>
+    <dimen name="dim_250dp">250dp</dimen>
+    <dimen name="dim_280dp">280dp</dimen>
+    <dimen name="dim_300dp">300dp</dimen>
+    <dimen name="dim_330dp">330dp</dimen>
+
+
+
+
+    <!--text-size-->
+    <dimen name="txt_1sp">1sp</dimen>
+    <dimen name="txt_2sp">2sp</dimen>
+    <dimen name="txt_4sp">4sp</dimen>
+    <dimen name="txt_6sp">6sp</dimen>
+    <dimen name="txt_8sp">8sp</dimen>
+    <dimen name="txt_10sp">10sp</dimen>
+    <dimen name="txt_11sp">11sp</dimen>
+    <dimen name="txt_12sp">12sp</dimen>
+    <dimen name="txt_13sp">13sp</dimen>
+    <dimen name="txt_14sp">14sp</dimen>
+    <dimen name="txt_16sp">16sp</dimen>
+    <dimen name="txt_18sp">18sp</dimen>
+    <dimen name="txt_24sp">24sp</dimen>
+    <dimen name="txt_25sp">25sp</dimen>
+    <dimen name="txt_32sp">32sp</dimen>
+    <dimen name="txt_40sp">40sp</dimen>
+    <dimen name="txt_48sp">48sp</dimen>
+    <dimen name="txt_56sp">56sp</dimen>
+    <dimen name="txt_64sp">64sp</dimen>
+    <dimen name="txt_72sp">72sp</dimen>
+    <dimen name="txt_80sp">80sp</dimen>
+    <dimen name="txt_90sp">90sp</dimen>
+    <dimen name="txt_140sp">140sp</dimen>
+
+
+    <dimen name="txt_blood_size">34sp</dimen>
+    <dimen name="txt_20sp">20sp</dimen>
+    <dimen name="dim_220dp">220dp</dimen>
+    <dimen name="dim_24p">24dp</dimen>
+    <dimen name="album_dp_17">17dp</dimen>
+
+
+</resources>

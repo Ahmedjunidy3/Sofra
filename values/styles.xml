@@ -1,0 +1,430 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <!-- Base application theme. -->
+
+    <!-- TextViewStyle -->
+    <style name="TextViewStyle">
+        <item name="android:layout_marginStart">@dimen/dim_20dp</item>
+        <item name="android:layout_marginEnd">@dimen/dim_20dp</item>
+        <item name="android:layout_gravity">start</item>
+        <item name="android:textSize">@dimen/txt_18sp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextViewStyle2">
+        <item name="android:textSize">@dimen/txt_18sp</item>
+        <item name="android:textColor">@color/colorPurple</item>
+    </style>
+
+    <style name="TextViewStyle3">
+        <item name="android:layout_marginTop">@dimen/txt_2sp</item>
+        <item name="android:textSize">@dimen/txt_12sp</item>
+        <item name="android:textColor">@color/colorLightRed</item>
+    </style>
+
+    <style name="TextViewStyle4">
+        <item name="android:textSize">@dimen/txt_13sp</item>
+        <item name="android:textColor">@color/colorPurple</item>
+        <item name="android:layout_marginTop">@dimen/txt_6sp</item>
+    </style>
+
+    <style name="TextViewStyle5">
+        <item name="android:textSize">@dimen/txt_14sp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+    </style>
+
+    <style name="TextViewStyle6">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">@dimen/txt_20sp</item>
+        <item name="android:layout_marginEnd">@dimen/txt_20sp</item>
+        <item name="android:layout_gravity">start</item>
+        <item name="android:textSize">@dimen/txt_13sp</item>
+        <item name="android:textColor">@color/colorPurple</item>
+    </style>
+
+    <style name="TextViewStyle7">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/txt_14sp</item>
+        <item name="android:textColor">@color/colorPurple</item>
+    </style>
+
+    <style name="TextViewStyle8">
+        <item name="android:textSize">@dimen/txt_13sp</item>
+        <item name="android:textColor">@color/colorPurple</item>
+        <item name="android:layout_marginTop">@dimen/dim_3dp</item>
+    </style>
+
+    <style name="TextViewStyle9">
+        <item name="android:layout_marginStart">@dimen/dim_40dp</item>
+        <item name="android:layout_marginEnd">@dimen/dim_10dp</item>
+        <item name="android:textSize">@dimen/txt_11sp</item>
+    </style>
+
+    <style name="TextViewStyle10">
+        <item name="android:textSize">@dimen/txt_16sp</item>
+        <item name="android:textColor">@color/colorPurple</item>
+    </style>
+
+    <style name="TextViewStyle11">
+        <item name="android:textSize">@dimen/txt_20sp</item>
+        <item name="android:textColor">@color/colorPurple</item>
+    </style>
+
+    <style name="TextViewStyle12">
+        <item name="android:textSize">@dimen/txt_13sp</item>
+        <item name="android:textColor">@color/colorPurple</item>
+    </style>
+
+    <style name="TextViewStyle13">
+        <item name="android:textSize">@dimen/txt_14sp</item>
+        <item name="android:textColor">@color/colorPurple</item>
+    </style>
+
+    <!-- TextViewStyle -->
+
+
+    <!-- BigButtonStyle -->
+    <style name="BigButtonStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dim_30dp</item>
+        <item name="android:layout_marginStart">@dimen/dim_50dp</item>
+        <item name="android:layout_marginEnd">@dimen/dim_50dp</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:background">@drawable/btn_cornered</item>
+        <item name="android:backgroundTint">@android:color/holo_red_dark</item>
+        <item name="android:textSize">@dimen/txt_14sp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="BigButtonStyle2">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dim_35dp</item>
+        <item name="android:layout_marginStart">@dimen/dim_50dp</item>
+        <item name="android:layout_marginEnd">@dimen/dim_50dp</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingStart">@dimen/dim_65dp</item>
+        <item name="android:drawablePadding">-80dp</item>
+        <item name="android:background">@drawable/btn_cornered</item>
+        <item name="android:backgroundTint">@android:color/holo_red_dark</item>
+        <item name="android:textSize">@dimen/txt_14sp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="BigButtonStyle3">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dim_35dp</item>
+        <item name="android:layout_marginStart">@dimen/dim_60dp</item>
+        <item name="android:layout_marginEnd">@dimen/dim_60dp</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:background">@drawable/btn_cornered</item>
+        <item name="android:backgroundTint">@android:color/holo_red_dark</item>
+        <item name="android:textSize">@dimen/txt_14sp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="SmallButtonStyle">
+        <item name="android:layout_width">@dimen/txt_140sp</item>
+        <item name="android:layout_height">@dimen/dim_30dp</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:background">@drawable/btn_cornered</item>
+        <item name="android:backgroundTint">@android:color/holo_red_dark</item>
+        <item name="android:textSize">@dimen/txt_14sp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="SmallButtonStyle2">
+        <item name="android:layout_height">@dimen/txt_25sp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/btn_cornered</item>
+        <item name="android:drawablePadding">-10dp</item>
+        <item name="android:paddingStart">@dimen/dim_15dp</item>
+        <item name="android:textSize">@dimen/txt_10sp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="SmallButtonStyle3">
+        <item name="android:layout_width">@dimen/dim_120dp</item>
+        <item name="android:layout_height">@dimen/dim_30dp</item>
+        <item name="android:background">@drawable/btn_cornered</item>
+        <item name="android:backgroundTint">@android:color/holo_red_dark</item>
+        <item name="android:textSize">@dimen/txt_14sp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="SmallButtonStyle4">
+        <item name="android:layout_width">@dimen/txt_90sp</item>
+        <item name="android:layout_height">@dimen/dim_25dp</item>
+        <item name="android:background">@drawable/btn_cornered</item>
+        <item name="android:backgroundTint">@android:color/holo_red_dark</item>
+        <item name="android:textSize">@dimen/txt_14sp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="SmallButtonStyle5">
+        <item name="android:layout_height">@dimen/dim_25dp</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/btn_cornered</item>
+        <item name="android:drawablePadding">-10dp</item>
+        <item name="android:paddingStart">@dimen/dim_15dp</item>
+        <item name="android:textSize">@dimen/txt_10sp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <!-- BigButtonStyle -->
+
+    <!-- RadioButton Style -->
+    <style name="RadioButtonStyle">
+        <item name="android:textColor">@color/colorPurple</item>
+        <item name="android:textSize">@dimen/txt_14sp</item>
+        <item name="android:paddingStart">@dimen/dim_5dp</item>
+        <item name="android:paddingEnd">@dimen/dim_5dp</item>
+        <item name="android:paddingTop">@dimen/dim_5dp</item>
+        <item name="android:paddingBottom">@dimen/dim_5dp</item>
+    </style>
+    <!-- RadioButton Style -->
+
+
+    <!-- EditText Style -->
+    <style name="EditTextStyle">
+        <item name="android:layout_marginStart">@dimen/dim_20dp</item>
+        <item name="android:layout_marginEnd">@dimen/dim_20dp</item>
+        <item name="android:drawablePadding">@dimen/dim_8dp</item>
+        <item name="android:gravity">start|center_vertical</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/txt_14sp</item>
+    </style>
+
+    <style name="EditTextStyle2">
+        <item name="android:layout_marginStart">@dimen/dim_20dp</item>
+        <item name="android:layout_marginEnd">@dimen/dim_20dp</item>
+        <item name="android:drawablePadding">@dimen/dim_8dp</item>
+        <item name="android:gravity">start</item>
+        <item name="android:layout_marginTop">@dimen/dim_10dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/txt_14sp</item>
+    </style>
+
+    <style name="EditTextStyle3">
+        <item name="android:layout_marginStart">@dimen/dim_20dp</item>
+        <item name="android:layout_marginEnd">@dimen/dim_20dp</item>
+        <item name="android:drawablePadding">@dimen/dim_10dp</item>
+        <item name="android:background">@drawable/btn_cornered</item>
+        <item name="android:backgroundTint">@color/colorDarkGray</item>
+        <item name="android:paddingStart">@dimen/dim_15dp</item>
+        <item name="android:paddingEnd">@dimen/dim_15dp</item>
+        <item name="android:gravity">start|center_vertical</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/colorPurple</item>
+        <item name="android:textSize">@dimen/txt_14sp</item>
+    </style>
+
+    <style name="EditTextStyle5">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@drawable/btn_cornered_white_small_radius</item>
+        <item name="android:paddingStart">@dimen/dim_15dp</item>
+        <item name="android:paddingEnd">@dimen/dim_15dp</item>
+        <item name="android:gravity">start|center_vertical</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/colorPurple</item>
+        <item name="android:textSize">@dimen/txt_14sp</item>
+    </style>
+
+    <style name="EditTextStyle6">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@drawable/btn_cornered_white_small_radius</item>
+        <item name="android:paddingStart">@dimen/dim_15dp</item>
+        <item name="android:gravity">start|top</item>
+        <item name="android:paddingEnd">@dimen/dim_15dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/colorPurple</item>
+        <item name="android:textSize">@dimen/txt_14sp</item>
+    </style>
+
+    <style name="EditTextStyle7">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@drawable/btn_cornered_gray_small_radius</item>
+        <item name="android:paddingStart">@dimen/dim_15dp</item>
+        <item name="android:paddingEnd">@dimen/dim_15dp</item>
+        <item name="android:drawablePadding">@dimen/dim_30dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/colorPurple</item>
+        <item name="android:textSize">@dimen/txt_14sp</item>
+    </style>
+
+    <style name="EditTextStyle8">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@drawable/btn_cornered</item>
+        <item name="android:backgroundTint">@color/colorDarkGray</item>
+        <item name="android:paddingStart">@dimen/dim_15dp</item>
+        <item name="android:paddingEnd">@dimen/dim_15dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/colorPurple</item>
+        <item name="android:textSize">@dimen/txt_14sp</item>
+    </style>
+
+    <style name="EditTextStyle9">
+        <item name="android:background">@drawable/btn_cornered_gray_small_radius</item>
+        <item name="android:textColor">@color/colorPurple</item>
+        <item name="android:textSize">@dimen/txt_10sp</item>
+    </style>
+
+    <style name="EditTextStyle10">
+        <item name="android:background">@drawable/btn_cornered</item>
+        <item name="android:gravity">start|center_vertical</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textSize">@dimen/txt_14sp</item>
+    </style>
+
+    <style name="EditTextStyle11">
+        <item name="android:layout_marginStart">@dimen/dim_20dp</item>
+        <item name="android:layout_marginEnd">@dimen/dim_20dp</item>
+        <item name="android:drawablePadding">@dimen/dim_10dp</item>
+        <item name="android:background">@drawable/btn_cornered</item>
+        <item name="android:paddingStart">@dimen/dim_15dp</item>
+        <item name="android:paddingEnd">@dimen/dim_15dp</item>
+        <item name="android:gravity">start|center_vertical</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/colorPurple</item>
+        <item name="android:textSize">@dimen/txt_14sp</item>
+    </style>
+    <!-- EditText Style -->
+
+    <!-- CardView Style -->
+    <style name="BigTextViewCardViewStyle">
+        <item name="cardCornerRadius">@dimen/dim_30dp</item>
+        <item name="cardUseCompatPadding">true</item>
+        <item name="cardPreventCornerOverlap">false</item>
+    </style>
+
+
+    <style name="SmallEditTextCardViewStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dim_40dp</item>
+        <item name="android:layout_marginStart">@dimen/dim_20dp</item>
+        <item name="android:layout_marginEnd">@dimen/dim_20dp</item>
+        <item name="cardCornerRadius">@dimen/dim_20dp</item>
+    </style>
+
+    <style name="SmallEditTextCardViewStyle2">
+        <item name="android:layout_width">@dimen/dim_100dp</item>
+        <item name="android:layout_height">@dimen/dim_40dp</item>
+        <item name="cardCornerRadius">@dimen/dim_20dp</item>
+    </style>
+
+    <style name="SmallImageViewCardViewStyle">
+        <item name="android:layout_width">@dimen/dim_60dp</item>
+        <item name="android:layout_height">@dimen/dim_60dp</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="cardBackgroundColor">@color/colorDarkGray</item>
+        <item name="cardCornerRadius">@dimen/dim_10dp</item>
+    </style>
+
+    <style name="SmallImageViewCardViewStyle2">
+        <item name="android:layout_width">@dimen/dim_55dp</item>
+        <item name="android:layout_height">@dimen/dim_55dp</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="cardBackgroundColor">@android:color/white</item>
+        <item name="cardCornerRadius">@dimen/dim_27dp</item>
+    </style>
+
+    <style name="BigEditTextCardViewStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dim_80dp</item>
+        <item name="android:layout_marginStart">@dimen/dim_20dp</item>
+        <item name="android:layout_marginEnd">@dimen/dim_20dp</item>
+        <item name="cardCornerRadius">@dimen/dim_20dp</item>
+    </style>
+
+    <style name="CardViewStyle">
+        <item name="android:layout_marginStart">@dimen/dim_15dp</item>
+        <item name="android:layout_marginEnd">@dimen/dim_15dp</item>
+        <item name="android:layout_marginTop">@dimen/dim_15dp</item>
+        <item name="cardCornerRadius">@dimen/dim_10dp</item>
+        <item name="contentPaddingLeft">@dimen/dim_15dp</item>
+        <item name="contentPaddingRight">@dimen/dim_15dp</item>
+        <item name="cardBackgroundColor">@color/colorDarkGray</item>
+        <item name="android:textColor">@color/colorPurple</item>
+        <item name="android:textSize">@dimen/txt_14sp</item>
+    </style>
+
+    <style name="CardViewStyle2">
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="cardCornerRadius">@dimen/dim_16dp</item>
+        <item name="elevation">0dp</item>
+        <item name="cardUseCompatPadding">true</item>
+        <item name="cardPreventCornerOverlap">false</item>
+    </style>
+
+    <style name="CardViewStyle3">
+        <item name="contentPaddingTop">@dimen/dim_10dp</item>
+        <item name="contentPaddingLeft">@dimen/dim_8dp</item>
+        <item name="contentPaddingRight">@dimen/dim_8dp</item>
+        <item name="cardCornerRadius">@dimen/dim_10dp</item>
+        <item name="cardUseCompatPadding">true</item>
+        <item name="cardPreventCornerOverlap">false</item>
+        <item name="android:textColor">@color/colorPurple</item>
+        <item name="android:textSize">@dimen/txt_14sp</item>
+    </style>
+
+    <!-- CardView Style -->
+
+    <!-- Spinner Style -->
+    <style name="SpinnerStyle">
+        <item name="android:layout_marginStart">@dimen/dim_20dp</item>
+        <item name="android:layout_marginEnd">@dimen/dim_20dp</item>
+        <item name="android:background">@drawable/spin_arrow_down_style_white</item>
+        <item name="android:layout_marginTop">@dimen/txt_14sp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/txt_14sp</item>
+    </style>
+
+    <style name="SpinnerStyle2">
+        <item name="android:layout_marginStart">@dimen/dim_20dp</item>
+        <item name="android:layout_marginEnd">@dimen/dim_20dp</item>
+        <item name="android:background">@drawable/spin_arrow_down_style_purple</item>
+        <item name="android:layout_marginTop">@dimen/txt_14sp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/txt_14sp</item>
+    </style>
+
+    <style name="SpinnerStyle3">
+        <item name="android:background">@drawable/spin_arrow_down_style_pink</item>
+        <item name="android:textSize">@dimen/txt_10sp</item>
+    </style>
+
+
+    <!-- Spinner Style -->
+
+
+</resources>
