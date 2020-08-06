@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.daimajia.swipe.SwipeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/swipe_layout_frag_offers_rest"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/dim_10dp"
+    app:show_mode="pull_out"
+    app:drag_edge="left">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <ImageView
+            android:id="@+id/edit_recy_item_frag_offers_rest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dim_10dp"
+            android:layout_marginEnd="@dimen/dim_10dp"
+            android:contentDescription="edit iv"
+            android:src="@drawable/ic_edit" />
+
+        <ImageView
+            android:id="@+id/remove_recy_item_frag_offers_rest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dim_40dp"
+            android:contentDescription="edit iv"
+            android:src="@drawable/ic_bin" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim_120dp"
+            android:paddingStart="@dimen/dim_70dp"
+            android:paddingEnd="@dimen/dim_30dp"
+            >
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                style="@style/BigTextViewCardViewStyle"
+                app:cardBackgroundColor="@color/colorDarkGray"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/title_tv_item_recy_frag_offers"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="start|top"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/dim_30dp"
+                        android:layout_marginStart="@dimen/dim_50dp"
+                        android:layout_marginEnd="@dimen/dim_20dp"
+                        android:text="@string/rest_offer_discount_text_item_recycler_offer"
+                        android:textColor="@color/colorPurple"
+                        android:textSize="@dimen/txt_14sp" />
+
+                <Button
+                    android:id="@+id/details_btn_item_recy_frag_offers"
+                    style="@style/SmallButtonStyle4"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="@dimen/dim_10dp"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/details"/>
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|center_vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/iv_item_recy_offer_frag_offers"
+                android:layout_width="@dimen/dim_80dp"
+                android:layout_height="@dimen/dim_80dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/dim_20dp"
+                android:layout_marginEnd="@dimen/dim_20dp"
+                android:src="@mipmap/ic_launcher"
+                app:riv_corner_radius="@dimen/dim_20dp" />
+
+        </FrameLayout>
+
+    </FrameLayout>
+
+</com.daimajia.swipe.SwipeLayout>
+

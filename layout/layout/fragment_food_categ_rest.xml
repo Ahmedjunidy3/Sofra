@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/album_dp_50">
+
+    <TextView
+        android:id="@+id/rest_header_tv_frag_food_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dim_10dp"
+        android:text="@string/types_frag_food_categ_rest"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/txt_16sp" />
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/sr_frag_food_category_rest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rest_header_tv_frag_food_category"
+        android:layout_marginTop="@dimen/album_dp_15"
+        android:layout_marginBottom="@dimen/album_dp_50">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_frag_food_category_rest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fadeScrollbars="true"
+            android:scrollbars="vertical" />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/float_btn_frag_food_category_rest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginBottom="@dimen/txt_64sp"
+        android:elevation="0dp"
+        android:src="@drawable/ic_add"
+        app:backgroundTint="@android:color/white" />
+
+</RelativeLayout>
+

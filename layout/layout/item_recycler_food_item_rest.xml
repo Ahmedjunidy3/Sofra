@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.daimajia.swipe.SwipeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/swipe_layout_food_item_rest"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/dim_20dp"
+    android:layout_marginEnd="@dimen/dim_20dp"
+    android:layout_marginBottom="@dimen/dim_8dp"
+    app:drag_edge="left"
+    app:show_mode="pull_out">
+
+    <LinearLayout
+        android:layout_width="@dimen/dim_55dp"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/edit_iv_item_rv_food_items_rest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dim_5dp"
+            android:layout_marginEnd="@dimen/dim_10dp"
+            android:contentDescription="edit iv"
+            android:src="@drawable/ic_edit" />
+
+        <ImageView
+            android:id="@+id/remove_iv_item_rv_food_items_rest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="edit iv"
+            android:src="@drawable/ic_bin" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/dim_5dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim_70dp"
+            android:elevation="@dimen/dim_7dp"
+            app:cardCornerRadius="@dimen/dim_20dp"
+            app:cardPreventCornerOverlap="false"
+            app:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/main_iv_item_rv_food_items_rest"
+                    android:layout_width="@dimen/dim_70dp"
+                    android:layout_height="@dimen/dim_50dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/dim_13dp"
+                    android:layout_marginEnd="@dimen/dim_5dp"
+                    android:contentDescription="food categ iv"
+                    android:scaleType="fitXY"
+                    app:riv_corner_radius="@dimen/dim_8dp" />
+
+                <TextView
+                    android:id="@+id/name_tv_item_rv_food_items_rest"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/main_iv_item_rv_food_items_rest"
+                    android:layout_toEndOf="@+id/main_iv_item_rv_food_items_rest"
+                    android:singleLine="true"
+                    android:text="@string/meal_type"
+                    android:textColor="@color/colorPurple"
+                    android:textSize="@dimen/dim_16dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/descript_tv_item_rv_food_items_rest"
+                    android:layout_width="@dimen/dim_80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/name_tv_item_rv_food_items_rest"
+                    android:layout_marginTop="@dimen/dim_2dp"
+                    android:layout_toEndOf="@+id/main_iv_item_rv_food_items_rest"
+                    android:gravity="start|center_vertical"
+                    android:singleLine="true"
+                    android:text="@string/description"
+                    android:textColor="@color/colorDarkGray"
+                    android:textSize="@dimen/txt_12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/price_title_tv_item_rv_food_items_rest"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/name_tv_item_rv_food_items_rest"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="@dimen/dim_20dp"
+                    android:text="@string/price"
+                    android:textColor="@color/colorPurple"
+                    android:textSize="@dimen/txt_12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/price_value_tv_item_rv_food_items_rest"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/price_title_tv_item_rv_food_items_rest"
+                    android:layout_alignTop="@+id/descript_tv_item_rv_food_items_rest"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="@dimen/dim_20dp"
+                    android:text="@string/price_value"
+                    android:textColor="@color/colorPurple"
+                    android:textSize="@dimen/txt_12sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+    </FrameLayout>
+
+</com.daimajia.swipe.SwipeLayout>

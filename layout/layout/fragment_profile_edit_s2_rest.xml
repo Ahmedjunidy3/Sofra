@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/dim_60dp"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/delivery_charge_et_frag_rest_profile_edit_s2"
+            style="@style/EditTextStyle3"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim_40dp"
+            android:drawableStart="@drawable/ic_cash_purple"
+            android:hint="سعر التوصيل"
+            android:importantForAutofill="no"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/delivery_time_et_frag_rest_profile_edit_s2"
+            style="@style/EditTextStyle3"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim_40dp"
+            android:layout_marginTop="@dimen/dim_10dp"
+            android:drawableStart="@drawable/ic_time_purple"
+            android:hint="وقت التوصيل"
+            android:importantForAutofill="no"
+            android:inputType="number" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dim_20dp"
+            android:layout_marginTop="@dimen/dim_15dp"
+            android:layout_marginEnd="@dimen/dim_20dp">
+
+            <TextView
+                android:id="@+id/status_tv_frag_rest_profile_edit_s2"
+                style="@style/TextViewStyle2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/dim_7dp"
+                android:text="@string/status_fragment_rest_profile_edit" />
+
+            <Switch
+                android:id="@+id/sw_btn_frag_rest_profile_edit_s2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/status_tv_frag_rest_profile_edit_s2"
+                android:switchPadding="@dimen/dim_10dp"
+                android:thumb="@drawable/switch_custom_thumb"
+                android:track="@drawable/switch_custom_track" />
+        </RelativeLayout>
+
+        <TextView
+            style="@style/TextViewStyle2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dim_20dp"
+            android:layout_marginTop="@dimen/dim_10dp"
+            android:layout_marginEnd="@dimen/dim_20dp"
+            android:layout_marginBottom="@dimen/dim_5dp"
+            android:text="@string/communi_details_frag_reg_s2"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/phone_no_et_frag_rest_profile_edit_s2"
+            style="@style/EditTextStyle3"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim_40dp"
+            android:layout_marginTop="@dimen/dim_10dp"
+            android:drawableStart="@drawable/ic_cash_purple"
+            android:hint="رقم الجوال"
+            android:importantForAutofill="no"
+            android:inputType="phone" />
+
+        <EditText
+            android:id="@+id/whats_app_no_et_frag_rest_profile_edit_s2"
+            style="@style/EditTextStyle3"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim_40dp"
+            android:layout_marginTop="@dimen/dim_10dp"
+            android:drawableStart="@drawable/ic_cash_purple"
+            android:hint="رقم الواتس اب"
+            android:importantForAutofill="no"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/edit_btn_frag_rest_profile_edit_s2"
+            style="@style/SmallButtonStyle"
+            android:layout_marginTop="@dimen/dim_20dp"
+            android:text="@string/edit" />
+    </LinearLayout>
+
+</ScrollView>

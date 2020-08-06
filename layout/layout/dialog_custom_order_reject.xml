@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dim_330dp"
+    android:layout_gravity="center"
+    android:layout_marginStart="@dimen/dim_20dp"
+    android:layout_marginEnd="@dimen/dim_20dp"
+    android:background="@color/colorGray"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/TextViewStyle2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dim_20dp"
+        android:text="@string/reject_reason_dialog_order_state"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/txt_20sp" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_150dp"
+        android:layout_marginStart="@dimen/dim_10dp"
+        android:layout_marginTop="@dimen/dim_30dp"
+        android:layout_marginEnd="@dimen/dim_10dp"
+        app:cardBackgroundColor="@android:color/white"
+        app:cardCornerRadius="@dimen/dim_10dp">
+
+        <EditText
+            android:id="@+id/reject_reason_et_dialog_order_state"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/btn_cornered"
+            android:gravity="start|top"
+            android:hint="من فضلك أدخل هنا سبب الإلغاء"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:paddingStart="@dimen/dim_10dp"
+            android:paddingTop="@dimen/dim_10dp"
+            android:paddingEnd="@dimen/dim_10dp" />
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/cancel_btn_dialog_order_state"
+        style="@style/BigButtonStyle"
+        android:layout_marginTop="@dimen/dim_25dp"
+        android:layout_marginBottom="@dimen/dim_35dp"
+        android:text="@string/cancel" />
+
+
+</LinearLayout>

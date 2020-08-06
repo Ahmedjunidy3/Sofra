@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/brookelark"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".view.resturantCycle.fragment.userCycle.RegisterFragment">
+
+
+    <EditText
+        android:id="@+id/register_fragment_et_restaurant_name"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="6dp"
+        android:backgroundTint="@color/colorGray"
+        android:drawableLeft="@drawable/name"
+        android:ems="10"
+        android:hint="Restaurant Name"
+        android:inputType="textPersonName"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="@color/colorGray" />
+
+    <EditText
+        android:id="@+id/register_fragment_et_email"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="6dp"
+        android:backgroundTint="@color/colorGray"
+        android:drawableLeft="@drawable/email"
+        android:ems="10"
+        android:hint="E-mail"
+        android:inputType="textEmailAddress"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="@color/colorGray" />
+
+
+    <EditText
+        android:id="@+id/register_fragment_et_delivery_time"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="6dp"
+        android:backgroundTint="@color/colorGray"
+        android:drawableLeft="@drawable/email"
+        android:ems="11"
+        android:hint="delivery Time"
+        android:inputType="number"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="@color/colorGray" />
+
+    <Spinner
+        android:id="@+id/register_fragment_spinner_city"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="6dp"
+        android:backgroundTint="@color/colorGray"
+        android:drawableLeft="@drawable/home"
+        android:hint="blood type"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="@color/colorGray" />
+
+    <Spinner
+        android:id="@+id/register_fragment_spinner_zone"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="6dp"
+        android:backgroundTint="@color/colorGray"
+        android:drawableLeft="@drawable/zone"
+        android:hint="zone"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="@color/colorGray" />
+
+
+    <EditText
+        android:id="@+id/register_fragment_et_password"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="6dp"
+        android:backgroundTint="@color/colorGray"
+        android:drawableLeft="@drawable/password"
+        android:ems="10"
+        android:hint="password"
+        android:inputType="textPassword"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="@color/colorGray" />
+
+    <EditText
+        android:id="@+id/register_fragment_et_repassword"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="6dp"
+        android:backgroundTint="@color/colorGray"
+        android:drawableLeft="@drawable/password"
+        android:ems="10"
+        android:hint="re-password"
+        android:inputType="textPassword"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="@color/colorGray" />
+
+
+    <EditText
+        android:id="@+id/register_fragment_et_minimum_order"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="6dp"
+        android:backgroundTint="@color/colorGray"
+        android:drawableLeft="@drawable/delivery"
+        android:ems="10"
+        android:hint="  Minimum Order"
+        android:inputType="date"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="@color/colorGray" />
+
+    <EditText
+        android:id="@+id/register_fragment_et_delivery_price"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="6dp"
+        android:backgroundTint="@color/colorGray"
+        android:drawableLeft="@drawable/payment"
+        android:ems="10"
+        android:hint="Delivery Price"
+        android:inputType="number"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="@color/colorGray" />
+
+    <Button
+        android:id="@+id/register_fragment_btn_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dim_48dp"
+        android:background="@drawable/redbtn"
+        android:text="Next"
+        android:textColor="#FFFFFF" />
+</LinearLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root_layout_item_recyc_view_rest_item_food_list_vert"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/dim_15dp">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/iv_item_recyc_view_rest_item_food_list_vert"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_100dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/ic_launcher"
+        app:riv_corner_radius_top_left="@dimen/dim_14dp"
+        app:riv_corner_radius_top_right="@dimen/dim_14dp" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/iv_item_recyc_view_rest_item_food_list_vert"
+        android:layout_marginTop="@dimen/dim_75dp"
+        app:cardBackgroundColor="@android:color/white"
+        app:cardCornerRadius="@dimen/dim_14dp"
+        app:cardPreventCornerOverlap="false"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingStart="@dimen/dim_15dp"
+            android:paddingTop="@dimen/dim_8dp"
+            android:paddingEnd="@dimen/dim_15dp"
+            android:paddingBottom="@dimen/dim_8dp">
+
+            <TextView
+                android:id="@+id/title_tv_item_recyc_view_rest_item_food_list_vert"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="فراخ مشويه"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/txt_14sp" />
+
+            <TextView
+                android:id="@+id/descript_tv_item_recyc_view_rest_item_food_list_vert"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dim_5dp"
+                android:text="فراخ مشويه من كنتاكى محشيه رز"
+                android:textSize="@dimen/txt_12sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/price_tv_item_recyc_view_rest_item_food_list_vert"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dim_5dp"
+                    android:text="@string/price_value"
+                    android:textColor="@color/colorPurple"
+                    android:textSize="@dimen/txt_14sp" />
+
+                <TextView
+                    android:id="@+id/offer_tv_item_recyc_view_rest_item_food_list_vert"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dim_5dp"
+                    android:layout_marginTop="@dimen/dim_5dp"
+                    android:text="@string/offer_price"
+                    android:textColor="@color/colorPurple"
+                    android:textSize="@dimen/txt_14sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

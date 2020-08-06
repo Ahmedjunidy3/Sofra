@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dim_50dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dim_10dp"
+            android:text="@string/contact_us_frag_contact_us"
+            android:textColor="@color/colorPurple"
+            android:textSize="@dimen/txt_18sp"
+            android:textStyle="bold" />
+
+        <androidx.cardview.widget.CardView
+            style="@style/SmallEditTextCardViewStyle"
+            android:layout_marginTop="@dimen/dim_15dp">
+
+            <EditText
+                android:id="@+id/name_frag_contact_us"
+                style="@style/EditTextStyle8"
+                android:hint="الأسم كاملا"
+                android:importantForAutofill="no"
+                android:inputType="text" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            style="@style/SmallEditTextCardViewStyle"
+            android:layout_marginTop="@dimen/dim_15dp">
+
+            <EditText
+                android:id="@+id/email_frag_contact_us"
+                style="@style/EditTextStyle8"
+                android:hint="الإيميل"
+                android:importantForAutofill="no"
+                android:inputType="textEmailAddress" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            style="@style/SmallEditTextCardViewStyle"
+            android:layout_marginTop="@dimen/dim_15dp">
+
+            <EditText
+                android:id="@+id/phone_frag_contact_us"
+                style="@style/EditTextStyle8"
+                android:hint="الجوال"
+                android:importantForAutofill="no"
+                android:inputType="phone" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            style="@style/SmallEditTextCardViewStyle"
+            android:layout_marginTop="@dimen/dim_15dp">
+
+            <EditText
+                android:id="@+id/message_frag_contact_us"
+                style="@style/EditTextStyle8"
+                android:hint="ما هى رسالتك؟"
+                android:importantForAutofill="no"
+                android:inputType="text" />
+        </androidx.cardview.widget.CardView>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dim_10dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/complaint_rb_frag_contact_us"
+                style="@style/RadioButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/radion_btn_custom"
+                android:text="@string/complaint" />
+
+            <RadioButton
+                android:id="@+id/suggest_rb_frag_contact_us"
+                style="@style/RadioButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/radion_btn_custom"
+                android:text="@string/suggestion" />
+
+            <RadioButton
+                android:id="@+id/inquiry_rb_frag_contact_us"
+                style="@style/RadioButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/radion_btn_custom"
+                android:text="@string/inquiry" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/send_btn_frag_contact_us"
+            style="@style/BigButtonStyle3"
+            android:layout_marginTop="@dimen/dim_20dp"
+            android:layout_marginBottom="@dimen/dim_60dp"
+            android:text="@string/send" />
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/brookelark"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/dim_5dp">
+
+        <androidx.cardview.widget.CardView
+            style="@style/SmallImageViewCardViewStyle2"
+            android:layout_marginTop="@dimen/dim_40dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/iv_frag_reg_client"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/circle_iv"
+                android:backgroundTint="@android:color/white"
+                android:contentDescription="add user iv"
+                android:padding="@dimen/dim_6dp"
+                android:src="@drawable/ic_add_user" />
+        </androidx.cardview.widget.CardView>
+
+        <EditText
+            android:id="@+id/name_et_frag_reg_client"
+            style="@style/EditTextStyle2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_person_white"
+            android:hint="الأسم"
+            android:importantForAutofill="no"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/email_et_frag_reg_client"
+            style="@style/EditTextStyle2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_email_white"
+            android:hint="@string/rest_email_frag_reg_s1"
+            android:importantForAutofill="no"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/phone_no_et_frag_reg_client"
+            style="@style/EditTextStyle2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_time_white"
+            android:hint="الجوال"
+            android:importantForAutofill="no"
+            android:inputType="phone" />
+
+        <Spinner
+            android:id="@+id/city_spin_frag_reg_client"
+            style="@style/SpinnerStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/rest_city_frag_reg_s1"
+            android:importantForAutofill="no"
+            android:inputType="text" />
+
+        <Spinner
+            android:id="@+id/region_spin_frag_reg_client"
+            style="@style/SpinnerStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_home_white"
+            android:hint="@string/rest_neigh_frag_reg_s1"
+            android:importantForAutofill="no"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/pass_et_frag_reg_client"
+            style="@style/EditTextStyle2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_lock_white"
+            android:hint="@string/rest_pass_frag_reg_s1"
+            android:importantForAutofill="no"
+            android:inputType="textPassword" />
+
+        <EditText
+            android:id="@+id/pass_confirm_et_frag_reg_client"
+            style="@style/EditTextStyle2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_lock_white"
+            android:hint="@string/rest_pass_again_frag_reg_s1"
+            android:importantForAutofill="no"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/register_btn_frag_reg_client"
+            style="@style/BigButtonStyle2"
+            android:layout_marginTop="@dimen/dim_30dp"
+            android:layout_marginBottom="@dimen/dim_30dp"
+            android:drawableStart="@drawable/ic_enter"
+            android:text="@string/register" />
+
+    </LinearLayout>
+
+</ScrollView>

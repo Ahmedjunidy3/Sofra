@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_frag_reviews_rest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dim_15dp"
+        android:layout_marginBottom="@dimen/dim_10dp"
+        android:text="@string/add_your_comment_text_frag_reviews_rest"
+        android:textColor="@color/colorPurple"
+        android:textSize="@dimen/txt_12sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/evaluate_btn_frag_reviews_rest"
+        style="@style/SmallButtonStyle"
+        android:text="@string/add_comment_or_evaluation" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_frag_rest_reviews"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dim_15dp"
+        android:layout_marginTop="@dimen/dim_20dp"
+        android:layout_marginEnd="@dimen/dim_15dp"
+        android:fadeScrollbars="true"
+        android:scrollbars="vertical" />
+
+</LinearLayout>

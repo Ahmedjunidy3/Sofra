@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/frame_layout_frag_rest_list_client"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/dim_10dp">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_120dp"
+        android:paddingStart="@dimen/dim_70dp"
+        android:paddingEnd="@dimen/dim_30dp">
+
+        <androidx.cardview.widget.CardView
+            style="@style/BigTextViewCardViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/name_tv_item_recyc_view_frag_rest_client"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/album_dp_45"
+                    android:layout_marginTop="@dimen/dim_20dp"
+                    android:layout_marginEnd="@dimen/dim_10dp"
+                    android:singleLine="true"
+                    android:text="@string/restaurant_name"
+                    android:textColor="@color/colorPurple"
+                    android:textSize="@dimen/txt_14sp" />
+
+                <ImageView
+                    android:id="@+id/state_iv_item_recyc_view_frag_rest_client"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/state_tv_item_recyc_view_frag_rest_client"
+                    android:layout_toStartOf="@+id/state_tv_item_recyc_view_frag_rest_client"
+                    android:contentDescription="iv"
+                    android:src="@drawable/closed_state_light" />
+
+                <TextView
+                    android:id="@+id/state_tv_item_recyc_view_frag_rest_client"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="@dimen/dim_6dp"
+                    android:layout_marginTop="@dimen/dim_25dp"
+                    android:layout_marginEnd="@dimen/dim_20dp"
+                    android:text="@string/open_state"
+                    android:textSize="@dimen/txt_10sp" />
+
+                <androidx.appcompat.widget.AppCompatRatingBar
+                    android:id="@+id/rating_bar_item_recyc_view_frag_rest_client"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dim_35dp"
+                    android:layout_below="@+id/name_tv_item_recyc_view_frag_rest_client"
+                    android:layout_marginTop="-5dp"
+                    android:numStars="5"
+                    android:scaleX="0.5"
+                    android:scaleY="0.6" />
+
+                <TextView
+                    android:id="@+id/min_charge_tv_item_recyc_view_frag_rest_client"
+                    style="@style/TextViewStyle9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rating_bar_item_recyc_view_frag_rest_client"
+                    android:text="@string/rest_min_charge" />
+
+                <TextView
+                    android:id="@+id/delivery_charge_tv_item_recyc_view_frag_rest_client"
+                    style="@style/TextViewStyle9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/min_charge_tv_item_recyc_view_frag_rest_client"
+                    android:layout_marginTop="@dimen/dim_1dp"
+                    android:text="@string/delivery_charge" />
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start|center_vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_item_recyc_view_frag_rest_client"
+            android:layout_width="@dimen/dim_80dp"
+            android:layout_height="@dimen/dim_80dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/dim_20dp"
+            android:layout_marginEnd="@dimen/dim_20dp"
+            android:src="@mipmap/ic_launcher"
+            app:riv_corner_radius="@dimen/dim_20dp" />
+
+    </FrameLayout>
+
+</FrameLayout>
+

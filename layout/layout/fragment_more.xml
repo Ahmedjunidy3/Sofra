@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="@dimen/dim_30dp"
+    android:layout_marginTop="@dimen/dim_50dp"
+    android:layout_marginEnd="@dimen/dim_30dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/dim_30dp"
+        android:text="@string/rest_more_frag_more"
+        android:textColor="@color/colorPurple"
+        android:textSize="@dimen/txt_18sp" />
+
+    <TextView
+        android:id="@+id/offers_tv_frag_more"
+        style="@style/TextViewStyle2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/ic_gift"
+        android:drawablePadding="@dimen/dim_10dp"
+        android:text="العروض" />
+
+    <TextView
+        style="@style/TextViewStyle10"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/dim_5dp"
+        android:background="@android:color/darker_gray" />
+
+    <TextView
+        android:id="@+id/contact_us_tv_frag_more"
+        style="@style/TextViewStyle2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dim_8dp"
+        android:drawableStart="@drawable/ic_email_purple"
+        android:drawablePadding="@dimen/dim_10dp"
+        android:text="@string/contact_us_frag_contact_us" />
+
+    <TextView
+        style="@style/TextViewStyle10"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/dim_5dp"
+        android:background="@android:color/darker_gray" />
+
+    <TextView
+        android:id="@+id/about_us_tv_frag_more"
+        style="@style/TextViewStyle2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dim_8dp"
+        android:drawableStart="@drawable/ic_light"
+        android:drawablePadding="@dimen/dim_10dp"
+        android:text="@string/about_us_frag_about_app" />
+
+    <TextView
+        style="@style/TextViewStyle10"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/dim_5dp"
+        android:background="@android:color/darker_gray" />
+
+    <TextView
+        android:id="@+id/reviews_tv_frag_more"
+        style="@style/TextViewStyle2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dim_8dp"
+        android:drawableStart="@drawable/ic_star"
+        android:drawablePadding="@dimen/dim_10dp"
+        android:text="التعليقات و التقييم" />
+
+    <TextView
+        android:id="@+id/divider_view_frag_more"
+        style="@style/TextViewStyle10"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/dim_5dp"
+        android:background="@android:color/darker_gray" />
+
+    <TextView
+        android:id="@+id/change_pass_tv_frag_more"
+        style="@style/TextViewStyle2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dim_8dp"
+        android:drawableStart="@drawable/ic_lock_purple"
+        android:drawablePadding="@dimen/dim_10dp"
+        android:text="@string/change_password" />
+
+    <TextView
+        style="@style/TextViewStyle10"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/dim_5dp"
+        android:background="@android:color/darker_gray" />
+
+    <TextView
+        android:id="@+id/log_out_tv_frag_more"
+        style="@style/TextViewStyle2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dim_8dp"
+        android:drawableStart="@drawable/ic_logout"
+        android:drawablePadding="@dimen/dim_10dp"
+        android:text="@string/log_out" />
+
+
+</LinearLayout>
+

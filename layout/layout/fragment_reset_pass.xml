@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/brookelark"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/TextViewStyle5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dim_10dp"
+            android:text="@string/please_enter_your_email" />
+
+        <androidx.cardview.widget.CardView
+            style="@style/SmallEditTextCardViewStyle"
+            android:layout_marginTop="@dimen/dim_40dp">
+
+            <EditText
+                android:id="@+id/email_et_frag_reset_pass"
+                style="@style/EditTextStyle5"
+                android:hint="البريد الإلكترونى"
+                android:importantForAutofill="no"
+                android:inputType="textEmailAddress" />
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/send_btn_frag_reset_pass"
+            style="@style/BigButtonStyle3"
+            android:layout_marginTop="@dimen/dim_35dp"
+            android:text="@string/send" />
+    </LinearLayout>
+
+</ScrollView>

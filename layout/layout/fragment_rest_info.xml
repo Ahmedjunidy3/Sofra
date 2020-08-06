@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/state_tv_item_list_view_frag_rest_info"
+        style="@style/TextViewStyle10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dim_25dp"
+        android:layout_marginTop="@dimen/dim_15dp"
+        android:layout_marginEnd="@dimen/dim_25dp"
+        android:layout_marginBottom="@dimen/dim_8dp"
+        android:text="@string/state_open" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="@dimen/dim_25dp"
+        android:layout_marginEnd="@dimen/dim_25dp"
+        android:background="@android:color/darker_gray" />
+
+
+    <TextView
+        android:id="@+id/city_tv_item_list_view_frag_rest_info"
+        style="@style/TextViewStyle10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dim_25dp"
+        android:layout_marginTop="@dimen/dim_8dp"
+        android:layout_marginEnd="@dimen/dim_25dp"
+        android:layout_marginBottom="@dimen/dim_8dp"
+        android:text="@string/city" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="@dimen/dim_25dp"
+        android:layout_marginEnd="@dimen/dim_25dp"
+        android:background="@android:color/darker_gray" />
+
+
+    <TextView
+        android:id="@+id/region_tv_item_list_view_frag_rest_info"
+        style="@style/TextViewStyle10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dim_25dp"
+        android:layout_marginTop="@dimen/dim_8dp"
+        android:layout_marginEnd="@dimen/dim_25dp"
+        android:layout_marginBottom="@dimen/dim_8dp"
+        android:text="@string/region" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="@dimen/dim_25dp"
+        android:layout_marginEnd="@dimen/dim_25dp"
+        android:background="@android:color/darker_gray" />
+
+    <TextView
+        android:id="@+id/min_charge_tv_item_list_view_frag_rest_info"
+        style="@style/TextViewStyle10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dim_25dp"
+        android:layout_marginTop="@dimen/dim_8dp"
+        android:layout_marginEnd="@dimen/dim_25dp"
+        android:layout_marginBottom="@dimen/dim_8dp"
+        android:text="@string/min_charge" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="@dimen/dim_25dp"
+        android:layout_marginEnd="@dimen/dim_25dp"
+        android:background="@android:color/darker_gray" />
+
+    <TextView
+        android:id="@+id/delivery_cost_tv_item_list_view_frag_rest_info"
+        style="@style/TextViewStyle10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dim_25dp"
+        android:layout_marginTop="@dimen/dim_8dp"
+        android:layout_marginEnd="@dimen/dim_25dp"
+        android:layout_marginBottom="@dimen/dim_8dp"
+        android:text="@string/delivery_fees" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="@dimen/dim_25dp"
+        android:layout_marginEnd="@dimen/dim_25dp"
+        android:background="@android:color/darker_gray" />
+
+</LinearLayout>

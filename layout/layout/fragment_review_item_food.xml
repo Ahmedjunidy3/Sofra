@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dim_15dp"
+        android:layout_marginTop="@dimen/dim_48dp"
+        android:layout_marginEnd="@dimen/dim_15dp"
+        android:orientation="vertical">
+
+        <include
+            layout="@layout/item_recyc_view_rest_item_food_list_vert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dim_8dp"
+            android:layout_marginBottom="@dimen/dim_20dp" />
+
+        <TextView
+            style="@style/TextViewStyle10"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dim_10dp"
+            android:text="طلب خاص"
+            android:textColor="@color/colorPurple"
+            android:textSize="@dimen/txt_13sp" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim_100dp"
+            android:layout_marginTop="@dimen/dim_15dp"
+            app:cardBackgroundColor="@android:color/holo_green_light"
+            app:cardCornerRadius="@dimen/dim_10dp"
+            app:cardPreventCornerOverlap="false"
+            app:cardUseCompatPadding="true">
+
+            <EditText
+                android:id="@+id/note_et_frag_review_item_food"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/btn_rectangle"
+                android:backgroundTint="@android:color/white"
+                android:gravity="start|top"
+                android:hint="أضف تعليقك هنا"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                android:paddingStart="@dimen/dim_10dp"
+                android:paddingTop="@dimen/dim_10dp"
+                android:paddingEnd="@dimen/dim_10dp" />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            style="@style/TextViewStyle10"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/dim_20dp"
+            android:background="@android:color/darker_gray" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dim_10dp">
+
+            <TextView
+                android:id="@+id/qty_tv_frag_review_item_food"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="@dimen/dim_10dp"
+                android:text="الكمية"
+                android:textColor="@color/colorPurple"
+                android:textSize="@dimen/txt_13sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/qty_tv_frag_review_item_food"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/dim_25dp"
+                android:paddingEnd="@dimen/dim_25dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="@dimen/dim_13dp">
+
+                    <ImageView
+                        android:id="@+id/increase_qty_iv_frag_review_item_food"
+                        android:layout_width="@dimen/dim_25dp"
+                        android:layout_height="@dimen/dim_25dp"
+                        android:background="@drawable/circle_iv"
+                        android:clickable="true"
+                        android:contentDescription="plus iv"
+                        android:focusable="true"
+                        android:padding="@dimen/dim_8dp"
+                        android:src="@drawable/ic_plus" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dim_20dp"
+                    android:layout_marginEnd="@dimen/dim_20dp"
+                    app:cardCornerRadius="@dimen/dim_12dp"
+                    app:cardPreventCornerOverlap="false"
+                    app:cardUseCompatPadding="true">
+
+                    <TextView
+                        android:id="@+id/qty_value_tv_frag_review_item_food"
+                        android:layout_width="@dimen/dim_100dp"
+                        android:layout_height="@dimen/dim_25dp"
+                        android:background="@drawable/btn_cornered"
+                        android:gravity="center"
+                        android:text="1"
+                        android:textColor="@color/colorPurple"
+                        android:textSize="@dimen/txt_16sp"
+                        android:textStyle="bold" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="@dimen/txt_13sp">
+
+                    <ImageView
+                        android:id="@+id/decrease_qty_iv_frag_review_item_food"
+                        android:layout_width="@dimen/dim_25dp"
+                        android:layout_height="@dimen/dim_25dp"
+                        android:background="@drawable/circle_iv"
+                        android:clickable="true"
+                        android:contentDescription="minus iv"
+                        android:focusable="true"
+                        android:padding="@dimen/dim_6dp"
+                        android:src="@drawable/ic_minus" />
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dim_8dp"
+            android:layout_marginBottom="@dimen/dim_120dp"
+            app:cardCornerRadius="@dimen/dim_20dp"
+            app:cardPreventCornerOverlap="false"
+            app:cardUseCompatPadding="true">
+
+            <ImageView
+                android:id="@+id/shop_cart_iv_frag_review_item_food"
+                android:layout_width="@dimen/dim_40dp"
+                android:layout_height="@dimen/dim_40dp"
+                android:background="@drawable/circle_iv"
+                android:backgroundTint="@color/colorPrimary"
+                android:contentDescription="shopping cart iv"
+                android:padding="@dimen/dim_8dp"
+                android:src="@drawable/ic_shopping_cart_white" />
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+
+</ScrollView>

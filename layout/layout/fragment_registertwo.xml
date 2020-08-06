@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/brookelark"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/TextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/txt_40sp"
+            android:layout_marginBottom="@dimen/txt_8sp"
+            android:text="@string/communi_details_frag_reg_s2" />
+
+        <EditText
+            android:id="@+id/rest_phone_no_et_frag_reg_2"
+            style="@style/EditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_phone_white"
+            android:hint="@string/rest_phone_no_frag_reg_s2"
+            android:importantForAutofill="no"
+            android:inputType="phone" />
+
+        <EditText
+            android:id="@+id/rest_whats_app_no_et_frag_reg_2"
+            style="@style/EditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/txt_16sp"
+            android:drawableStart="@drawable/ic_whatsapp_white"
+            android:hint="@string/rest_whats_app_no_frag_reg_s2"
+            android:importantForAutofill="no"
+            android:inputType="phone" />
+
+        <TextView
+            style="@style/TextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/txt_20sp"
+            android:layout_marginBottom="@dimen/dim_10dp"
+            android:text="@string/rest_iv_frag_reg_s2" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="@dimen/album_dp_50"
+            android:layout_height="@dimen/album_dp_50"
+            android:layout_marginStart="@dimen/album_dp_20"
+            app:cardCornerRadius="@dimen/txt_8sp">
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/rest_iv_frag_reg_2"
+                android:layout_width="@dimen/dim_35dp"
+                android:layout_height="@dimen/dim_35dp"
+                android:layout_gravity="center"
+                android:contentDescription="rest iv"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_resturant"
+                app:riv_corner_radius="@dimen/dim_10dp" />
+
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/rest_reg_btn_frag_reg_2"
+            style="@style/BigButtonStyle2"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/album_dp_30"
+            android:drawableStart="@drawable/ic_enter"
+            android:text="@string/register" />
+
+    </LinearLayout>
+</ScrollView>
+
+
+
+
+

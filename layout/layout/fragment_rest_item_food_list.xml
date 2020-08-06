@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_horiz_frag_rest_item_food_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dim_30dp"
+        android:layout_marginTop="@dimen/dim_15dp"
+        android:layout_marginEnd="@dimen/dim_30dp"
+        android:layout_marginBottom="@dimen/dim_20dp"
+        android:fadeScrollbars="true"
+        android:scrollbars="horizontal" />
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/sr_frag_rest_item_food_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dim_30dp"
+        android:layout_marginEnd="@dimen/dim_30dp"
+        android:layout_marginBottom="@dimen/dim_10dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_vert_frag_rest_item_food_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fadeScrollbars="true"
+            android:scrollbars="vertical" />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+</LinearLayout>

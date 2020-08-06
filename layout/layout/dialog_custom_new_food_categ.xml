@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dim_330dp"
+    android:layout_gravity="center"
+    android:layout_marginStart="@dimen/dim_20dp"
+    android:layout_marginEnd="@dimen/dim_20dp"
+    android:background="@color/colorGray"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/title_tv_dialog_rest_food_categ"
+        style="@style/TextViewStyle2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dim_40dp"
+        android:text="@string/food_type_dialog_new_food_categ" />
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/iv_dialog_rest_food_categ"
+                android:layout_width="@dimen/dim_80dp"
+                android:layout_height="@dimen/dim_80dp"
+                android:layout_marginTop="@dimen/dim_25dp"
+                android:background="@drawable/circle_iv" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:layout_width="@dimen/dim_35dp"
+                android:layout_height="@dimen/dim_35dp"
+                android:layout_marginTop="@dimen/dim_25dp"
+                android:contentDescription="plus iv"
+                android:src="@drawable/ic_add"
+                app:backgroundTint="@android:color/white" />
+        </FrameLayout>
+    </FrameLayout>
+
+    <EditText
+        android:id="@+id/foodtype_et_dialog_rest_food_categ"
+        style="@style/EditTextStyle11"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_40dp"
+        android:layout_marginTop="@dimen/dim_30dp"
+        android:hint="أسم التصنيف"
+        android:importantForAutofill="no"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/add_btn_dialog_rest_food_categ"
+        style="@style/SmallButtonStyle"
+        android:layout_marginTop="@dimen/dim_25dp"
+        android:layout_marginBottom="@dimen/dim_35dp"
+        android:background="@drawable/btn_cornered"
+        android:text="@string/add" />
+
+
+</LinearLayout>

@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dim_65dp"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/TextViewStyle2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/order_details_title" />
+
+        <androidx.cardview.widget.CardView
+            style="@style/CardViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dim_5dp"
+                android:layout_marginBottom="@dimen/dim_5dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/iv_frag_order_details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_launcher" />
+
+                <TextView
+                    android:id="@+id/rest_name_tv_frag_order_details"
+                    style="@style/TextViewStyle4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dim_5dp"
+                    android:layout_marginTop="@dimen/dim_1dp"
+                    android:layout_toEndOf="@+id/iv_frag_order_details"
+                    android:text="@string/rest_name_frag_order_details_rest" />
+
+                <TextView
+                    android:id="@+id/date_tv_frag_order_details"
+                    style="@style/TextViewStyle4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rest_name_tv_frag_order_details"
+                    android:layout_marginStart="@dimen/dim_5dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginBottom="@dimen/dim_1dp"
+                    android:layout_toEndOf="@+id/iv_frag_order_details"
+                    android:text="@string/day" />
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            style="@style/CardViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim_40dp">
+
+            <TextView
+                android:id="@+id/address_tv_frag_order_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|start"
+                android:text="@string/address"
+                android:textColor="@color/colorPurple"
+                android:textSize="@dimen/dim_13dp" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            style="@style/CardViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim_120dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/order_details_tv_frag_order_details"
+                    style="@style/TextViewStyle4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/order_details" />
+
+                <TextView
+                    android:id="@+id/meal_item_01_tv_frag_order_details"
+                    style="@style/TextViewStyle4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/meal_details" />
+
+                <TextView
+                    android:id="@+id/meal_item_02_tv_frag_order_details"
+                    style="@style/TextViewStyle4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/meal_item_03_tv_frag_order_details"
+                    style="@style/TextViewStyle4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            style="@style/CardViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim_120dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/order_cost_tv_frag_order_details"
+                    style="@style/TextViewStyle4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/order_price" />
+
+                <TextView
+                    android:id="@+id/delivery_cost_tv_frag_order_details"
+                    style="@style/TextViewStyle4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/delivery_charge" />
+
+                <TextView
+                    android:id="@+id/total_cost_tv_frag_order_details"
+                    style="@style/TextViewStyle4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/total_price" />
+
+                <TextView
+                    android:id="@+id/paying_method_tv_frag_order_details"
+                    style="@style/TextViewStyle4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/paying_method" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/dim_15dp"
+            android:layout_marginTop="@dimen/dim_10dp"
+            android:layout_marginEnd="@dimen/dim_15dp"
+            android:layout_marginBottom="@dimen/dim_130dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/call_btn_frag_order_details"
+                style="@style/SmallButtonStyle2"
+                android:layout_marginEnd="@dimen/dim_15dp"
+                android:backgroundTint="@color/colorPrimary"
+                android:drawableStart="@drawable/ic_call"
+                android:text="إتصال" />
+
+            <Button
+                android:id="@+id/accept_btn_frag_order_details"
+                style="@style/SmallButtonStyle2"
+                android:layout_marginEnd="@dimen/dim_15dp"
+                android:backgroundTint="@color/colorGreen"
+                android:drawableStart="@drawable/ic_accept"
+                android:text="قبول" />
+
+            <Button
+                android:id="@+id/reject_btn_frag_order_details"
+                style="@style/SmallButtonStyle2"
+                android:backgroundTint="@color/colorPurple"
+                android:drawableStart="@drawable/ic_cancel"
+                android:text="رفض" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

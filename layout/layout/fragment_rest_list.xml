@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/album_dp_45"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_35dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="25dp"
+        android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+            style="@style/CardViewStyle2"
+            android:layout_marginEnd="@dimen/dim_10dp">
+
+            <Spinner
+                android:id="@+id/region_spin_frag_rest_list_client"
+                style="@style/SpinnerStyle3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView style="@style/CardViewStyle2">
+
+            <EditText
+                android:id="@+id/search_et_frag_rest_list_client"
+                style="@style/EditTextStyle9"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableEnd="@drawable/ic_search"
+                android:drawablePadding="@dimen/dim_5dp"
+                android:hint="أبحث عن مطعمك المفضل"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                android:paddingStart="@dimen/dim_10dp"
+                android:paddingEnd="@dimen/dim_10dp"
+                android:singleLine="true"
+                android:textSize="@dimen/dim_10dp" />
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_frag_rest_list_client"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dim_60dp"
+        android:fadeScrollbars="true"
+        android:scrollbars="vertical" />
+
+
+</LinearLayout>
