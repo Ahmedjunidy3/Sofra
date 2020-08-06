@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dim_50dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/old_pass_et_frag_change_pass"
+            style="@style/EditTextStyle3"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim_40dp"
+            android:layout_marginTop="@dimen/dim_25dp"
+            android:hint="كلمه المرور القديمه"
+            android:importantForAutofill="no"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/new_pass_et_frag_change_pass"
+            style="@style/EditTextStyle3"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim_40dp"
+            android:layout_marginTop="@dimen/dim_20dp"
+            android:hint="كلمه المرور الجديده"
+            android:importantForAutofill="no"
+            android:inputType="textPassword" />
+
+        <EditText
+            android:id="@+id/pass_confirm_et_frag_change_pass"
+            style="@style/EditTextStyle3"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim_40dp"
+            android:layout_marginTop="@dimen/dim_25dp"
+            android:hint="تأكيد كلمه المرور الجديده"
+            android:importantForAutofill="no"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/change_btn_frag_change_pass"
+            style="@style/BigButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim_30dp"
+            android:layout_marginTop="@dimen/dim_35dp"
+            android:background="@drawable/btn_cornered"
+            android:text="@string/change" />
+    </LinearLayout>
+
+</ScrollView>

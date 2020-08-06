@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dim_15dp"
+        android:layout_marginTop="@dimen/dim_65dp"
+        android:layout_marginEnd="@dimen/dim_15dp"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/TextViewStyle2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/order_details_title" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim_140dp"
+            android:layout_marginTop="@dimen/dim_15dp"
+            app:cardCornerRadius="@dimen/dim_10dp"
+            app:cardPreventCornerOverlap="false"
+            app:cardUseCompatPadding="true">
+
+            <EditText
+                android:id="@+id/note_et_frag_client_complete_order"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/btn_rectangle"
+                android:backgroundTint="@color/colorGray"
+                android:gravity="start|top"
+                android:hint="إضافه ملاحظات"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                android:paddingStart="@dimen/dim_10dp"
+                android:paddingTop="@dimen/dim_10dp"
+                android:paddingEnd="@dimen/dim_10dp" />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            style="@style/TextViewStyle12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dim_10dp"
+            android:text="@string/delivery_address" />
+
+        <EditText
+            android:id="@+id/address_et_frag_client_complete_order"
+            style="@style/EditTextStyle10"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dim_30dp"
+            android:layout_marginTop="@dimen/dim_5dp"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            tools:ignore="LabelFor" />
+
+        <TextView
+            style="@style/TextViewStyle12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dim_9dp"
+            android:text="@string/payment" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dim_5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/TextViewStyle13"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="start"
+                android:text="@string/cash_on_delivery" />
+
+            <TextView
+                style="@style/TextViewStyle13"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:text="@string/pay_online" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dim_7dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/dim_10dp"
+                app:cardCornerRadius="@dimen/dim_13dp"
+                app:cardPreventCornerOverlap="false"
+                app:cardUseCompatPadding="true">
+
+                <androidx.appcompat.widget.AppCompatCheckBox
+                    android:id="@+id/pay_cash_chkbx_frag_client_complete_order"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/chk_bx_custom" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/dim_10dp"
+                app:cardCornerRadius="@dimen/dim_13dp"
+                app:cardPreventCornerOverlap="false"
+                app:cardUseCompatPadding="true">
+
+                <androidx.appcompat.widget.AppCompatCheckBox
+                    android:id="@+id/pay_online_chkbx_frag_client_complete_order"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/chk_bx_custom" />
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+        <androidx.cardview.widget.CardView
+            style="@style/CardViewStyle3"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim_80dp"
+            android:layout_marginTop="@dimen/dim_20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/sum_frag_client_complete_order"
+                    style="@style/TextViewStyle13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/delivery_cost_frag_client_complete_order"
+                    style="@style/TextViewStyle13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/total_price_frag_client_complete_order"
+                    style="@style/TextViewStyle13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/order_confirm_frag_client_complete_order"
+            style="@style/SmallButtonStyle"
+            android:layout_marginTop="@dimen/dim_10dp"
+            android:layout_marginBottom="@dimen/dim_130dp"
+            android:text="@string/confirm_request" />
+
+    </LinearLayout>
+
+</ScrollView>

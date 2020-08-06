@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/brookelark"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/TextViewStyle5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dim_30dp"
+            android:text="@string/please_enter_your_email_frag_new_pass_rest" />
+
+        <androidx.cardview.widget.CardView
+            style="@style/SmallEditTextCardViewStyle"
+            android:layout_marginTop="@dimen/dim_30dp">
+
+            <EditText
+                android:id="@+id/pin_code_et_frag_new_pass"
+                style="@style/EditTextStyle5"
+                android:hint="الكود المرسل"
+                android:importantForAutofill="no"
+                android:inputType="number" />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            style="@style/TextViewStyle5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dim_30dp"
+            android:text="@string/please_enter_your_new_pass_word_frag_new_pass_rest" />
+
+        <androidx.cardview.widget.CardView
+            style="@style/SmallEditTextCardViewStyle"
+            android:layout_marginTop="@dimen/dim_10dp">
+
+            <EditText
+                android:id="@+id/new_pass_et_frag_new_pass"
+                style="@style/EditTextStyle5"
+                android:hint="كلمه المرور الجديده"
+                android:importantForAutofill="no"
+                android:inputType="textPassword" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            style="@style/SmallEditTextCardViewStyle"
+            android:layout_marginTop="@dimen/dim_15dp">
+
+            <EditText
+                android:id="@+id/pass_confirm_et_frag_new_pass"
+                style="@style/EditTextStyle5"
+                android:hint="تأكيد كلمه المرور الجديده"
+                android:importantForAutofill="no"
+                android:inputType="textPassword" />
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/login_btn_frag_new_pass"
+            style="@style/BigButtonStyle3"
+            android:layout_marginTop="@dimen/dim_35dp"
+            android:text="@string/change" />
+    </LinearLayout>
+
+</ScrollView>

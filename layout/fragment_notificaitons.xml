@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGray"
+    android:orientation="vertical">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_frag_notificat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dim_15dp"
+        android:layout_marginTop="@dimen/dim_65dp"
+        android:layout_marginEnd="@dimen/dim_15dp"
+        android:layout_marginBottom="@dimen/dim_60dp" />
+
+</FrameLayout>

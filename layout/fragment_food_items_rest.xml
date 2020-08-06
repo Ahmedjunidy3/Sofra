@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/dim_65dp">
+
+    <TextView
+        android:id="@+id/header_food_name_frag_food_items_rest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/food_name_frag_food_item_rest"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/txt_16sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_frag_food_items_rest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header_food_name_frag_food_items_rest"
+        android:layout_marginTop="@dimen/dim_15dp"
+        android:layout_marginBottom="@dimen/dim_50dp"
+        android:fadeScrollbars="true"
+        android:scrollbars="vertical" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/float_btn_frag_food_items_rest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginBottom="@dimen/dim_60dp"
+        android:elevation="0dp"
+        android:src="@drawable/ic_add"
+        app:backgroundTint="@android:color/white" />
+
+</RelativeLayout>

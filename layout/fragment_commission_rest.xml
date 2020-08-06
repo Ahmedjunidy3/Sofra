@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dim_50dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dim_10dp"
+            android:text="@string/commission_frag_commission_rest"
+            android:textColor="@color/colorPurple"
+            android:textSize="@dimen/txt_18sp" />
+
+        <TextView
+            android:id="@+id/title_tv_frag_commission_rest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginStart="@dimen/dim_20dp"
+            android:layout_marginTop="@dimen/dim_20dp"
+            android:layout_marginEnd="@dimen/dim_20dp"
+            android:text="@string/subtitle_text_frag_commission_rest"
+            android:textColor="@color/colorPurple"
+            android:textSize="@dimen/txt_13sp" />
+
+        <TextView
+            android:id="@+id/rest_sales_tv_frag_commission_rest"
+            style="@style/TextViewStyle6"
+            android:layout_marginTop="@dimen/dim_20dp"
+            android:text="@string/rest_sales" />
+
+        <TextView
+            android:id="@+id/app_commiss_tv_frag_commission_rest"
+            style="@style/TextViewStyle6"
+            android:layout_marginTop="@dimen/dim_7dp"
+            android:text="@string/app_commissions" />
+
+        <TextView
+            android:id="@+id/paid_commiss_tv_frag_commission_rest"
+            style="@style/TextViewStyle6"
+            android:layout_marginTop="@dimen/dim_7dp"
+            android:text="@string/what_is_paid" />
+
+        <TextView
+            android:id="@+id/left_commiss_tv_frag_commission_rest"
+            style="@style/TextViewStyle6"
+            android:layout_marginTop="@dimen/dim_7dp"
+            android:text="@string/what_is_left" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/dim_55dp">
+
+            <LinearLayout
+                android:layout_width="@dimen/dim_280dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dim_30dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/TextViewStyle7"
+                    android:text="الأهلى: 374529855" />
+
+                <TextView
+                    style="@style/TextViewStyle7"
+                    android:layout_marginTop="@dimen/dim_10dp"
+                    android:text="الراجحى: 374529855" />
+
+                <TextView
+                    style="@style/TextViewStyle7"
+                    android:layout_marginTop="@dimen/dim_10dp"
+                    android:text="باسم سفره" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_frag_commission_rest"
+                android:layout_width="@dimen/dim_100dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:contentDescription="iv"
+                android:src="@drawable/commission_background" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>

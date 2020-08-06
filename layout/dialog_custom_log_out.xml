@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginStart="@dimen/dim_10dp"
+    android:layout_marginEnd="@dimen/dim_10dp"
+    app:cardCornerRadius="@dimen/dim_25dp"
+    app:cardPreventCornerOverlap="false"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/TextViewStyle2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dim_25dp"
+            android:text="@string/are_you_sure_to_exit" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim_110dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/dim_80dp"
+                app:cardCornerRadius="@dimen/dim_25dp"
+                app:cardPreventCornerOverlap="false"
+                app:cardUseCompatPadding="true">
+
+                <ImageView
+                    android:id="@+id/yes_iv_dialog_custom_log_out"
+                    android:layout_width="@dimen/dim_50dp"
+                    android:layout_height="@dimen/dim_50dp"
+                    android:background="@drawable/circle_iv"
+                    android:clickable="true"
+                    android:contentDescription="yes iv"
+                    android:focusable="true"
+                    android:padding="@dimen/dim_15dp"
+                    android:src="@drawable/ic_checkmark"
+                    android:text="@string/are_you_sure_to_exit" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="@dimen/dim_25dp"
+                app:cardPreventCornerOverlap="false"
+                app:cardUseCompatPadding="true">
+
+                <ImageView
+                    android:id="@+id/no_iv_dialog_custom_log_out"
+                    android:layout_width="@dimen/dim_50dp"
+                    android:layout_height="@dimen/dim_50dp"
+                    android:background="@drawable/circle_iv"
+                    android:clickable="true"
+                    android:contentDescription="no iv"
+                    android:focusable="true"
+                    android:padding="@dimen/dim_15dp"
+                    android:src="@drawable/ic_close_purple"
+                    android:text="@string/are_you_sure_to_exit" />
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

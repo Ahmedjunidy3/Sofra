@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/dim_65dp"
+    android:layout_marginBottom="@dimen/dim_60dp"
+    android:fillViewport="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/rest_the_offers_frag_offers"
+            android:textColor="@color/colorPurple"
+            android:textSize="@dimen/txt_18sp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_frag_offers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dim_15dp"
+            android:layout_marginBottom="@dimen/dim_15dp"
+            android:fadeScrollbars="true"
+            android:scrollbars="vertical" />
+
+        <Button
+            android:id="@+id/add_btn_frag_offers"
+            style="@style/SmallButtonStyle"
+            android:text="@string/rest_add_offer_frag_offers" />
+    </LinearLayout>
+
+</ScrollView>
